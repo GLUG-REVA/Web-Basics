@@ -1,3 +1,5 @@
+h1 {}
+
 .jumbotron {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -48,6 +50,7 @@ img.center {
 }
 
 footer {
+  background-color: #eee;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
