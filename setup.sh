@@ -1,6 +1,14 @@
-mkdir Web
-cd Web
+mkdir web
+cd web
 wget https://raw.githubusercontent.com/GLUG-REVA/Web-Basics/master/Basics/index.html
+https://raw.githubusercontent.com/GLUG-REVA/Web-Basics/master/Basics/master.css
+mkdir assign 
+cd assign
+wget https://raw.githubusercontent.com/GLUG-REVA/Web-Basics/master/Basics/assign/assign.css
+wget https://raw.githubusercontent.com/GLUG-REVA/Web-Basics/master/Basics/assign/assign.html
+wget https://raw.githubusercontent.com/GLUG-REVA/Web-Basics/master/Basics/assign/bruce.jpeg
+wget https://raw.githubusercontent.com/GLUG-REVA/Web-Basics/master/Basics/assign/hulk.jpg
+cd ..
 mkdir js
 cd js
 wget https://raw.githubusercontent.com/GLUG-REVA/Web-Basics/master/js/jquery-slim.min.js
@@ -10,20 +18,5 @@ cd ..
 mkdir css
 cd css
 wget https://raw.githubusercontent.com/GLUG-REVA/Web-Basics/master/css/bootstrap.min.css
-touch master.css
 cd ..
-mkdir images
-cd images
-wget https://raw.githubusercontent.com/GLUG-REVA/Web-Basics/master/images/Reality.jpg 
-wget https://raw.githubusercontent.com/GLUG-REVA/Web-Basics/master/images/Thor.jpg  
-wget https://raw.githubusercontent.com/GLUG-REVA/Web-Basics/master/images/bruce.jpeg 
-wget https://raw.githubusercontent.com/GLUG-REVA/Web-Basics/master/images/captain-a.jpg 
-wget https://raw.githubusercontent.com/GLUG-REVA/Web-Basics/master/images/hulk.jpg
-wget https://raw.githubusercontent.com/GLUG-REVA/Web-Basics/master/images/iron-man.jpg
-wget https://raw.githubusercontent.com/GLUG-REVA/Web-Basics/master/images/mind.jpg
-wget https://raw.githubusercontent.com/GLUG-REVA/Web-Basics/master/images/soul.jpg
-wget https://raw.githubusercontent.com/GLUG-REVA/Web-Basics/master/images/power.jpg
-wget https://raw.githubusercontent.com/GLUG-REVA/Web-Basics/master/images/space.jpg
-wget https://raw.githubusercontent.com/GLUG-REVA/Web-Basics/master/images/time.jpg
-wget https://raw.githubusercontent.com/GLUG-REVA/Web-Basics/master/images/spider-man.jpg
-cd ..
+
