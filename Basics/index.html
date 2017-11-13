@@ -103,6 +103,121 @@
         <li>Two</li>
     </ol>
     <p>That is some ugly output but, I hope it serves as an example.</p>
+    <p>Before we proceed furthur I would like to introduce you to a new tag: The div tag. We use this tag to group together a bunch of tags that go together. We will explore this tag more in that later stages. For now remember the syntax</p>
+    <code>&lt;div&gt; Some bunch of html tags and content goes here &lt;/div&gt;</code>
+    <br><br><br><br>
+    <h2 class="text-center">Bootstrap</h2> <br>
+    <p>Now we don't want to define all the CSS ourselves. For this purpose we have some frameworks which provide us with pre-defined classes that can be used by and us and make out life easy. Bootstrap happens to one such framework.</p>
+    <a href="http://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank">Click here to be taken to the bootstrap webiste.</a><br>
+    <p>Now bootstrap contains a lot of examples that we can look at.</p>
+    <p>Let us start from the basics:</p> <a href="http://getbootstrap.com/docs/4.0/content/typography/" target="_blank">Click here</a>
+    <p>Now this page alone includes all that we learnt yesterday and even more!</p>
+    <p>We developers, can make use of such frame works as bootstrap to make our life easy-peasy.</p>
+    <p>Let us explore some more.</p>
+    <p>Try finding the bootstrap support for images.</p>
+    <br><br><br>
+    <h2 class="text-center">Responsive content</h2> <br>
+    <p>Another highly compelling reason to use a CSS framework such as Bootstrap is to add the element of responsiveness to the webiste. So, what is this responsiveness? </p>
+    <p>Let us consider two devices a computer and a mobile phone. Both of them have different screen sizes. Due to this the way is we handle the content of a webpage must be diferent if we want to provide the user a smooth experience. And so comes the concept
+        of responsiveness. It is simply how the webpage should respond to to different range of screen sizes.</p>
+
+    <h3 class="text-center">Bootstrap's responsiveness</h3>
+    <p>Bootstrap provides us with a grid layout that we shall try to understand now.</p>
+    <p>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content.</p>
+    <p>Every row has 12 columns. Follow the examples below.</p>
+    <pre>
+        <code>
+            &lt;div class="row"&gt;&lt;/div&gt;
+        </code>
+    </pre>
+    <p>We start by specify a div(a tag that is used to maintain a collection of tags) wiht the class called row. Now we have 12 colums to play with. Look at the next example</p>
+    <pre>
+        <code>
+            &lt;div class="row"&gt;
+                &lt;div class="col-2 red"&gt;
+                &lt;/div&gt;
+                &lt;div class="col-8 green"&gt;
+                &lt;/div&gt;
+                &lt;div class="col-2 blue"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        </code>
+    </pre>
+    <p>In the above example red, green, blue classes are utility classes that is used to show the different containers.</p>
+    <p>The above code would render as follows on the browser:</p>
+    <div class="row">
+        <div class="col red">
+        </div>
+        <div class="col-8 green">
+        </div>
+        <div class="col blue">
+        </div>
+    </div>
+    <br><br><br>
+    <p>Observe, how the green box spans over a wider area than the other two boxes. All we need to do is, for every row that we have we get 12 colums. We need to distribute these colums among the elements that are meant to share it as we see fit. But, remember
+        that we only have 12 colums and the distribution should be such that everything in the end adds up to 12.</p>
+    <br><br>
+    <p>Let us look at an another example of the grid system</p>
+    <pre>
+        <code>
+            &lt;div class="row"&gt;
+                &lt;div class="offset-2 col-2 red"&gt;
+                &lt;/div&gt;
+                &lt;div class="col-6 green"&gt;
+                &lt;/div&gt;
+                &lt;div class="col-2 blue"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        </code>
+    </pre>
+    <br><br>
+    <p>The above code would render as follows:</p>
+    <br>
+    <div class="row">
+        <div class="offset-2 col-2 red">
+        </div>
+        <div class="col-6 green">
+        </div>
+        <div class="col-2 blue">
+        </div>
+    </div>
+    <br><br><br>
+    <p>As you can see the class offset helped us not to use the first two colums. The next two was used by the red box, the next six by the green box and so on...</p>
+    <p>An important point to notice is that all the valuse still add up to 12.</p>
+    <br><br>
+    <p>Have a look at this example to build furthur clarity...</p>
+    <pre>
+        <code>
+            &lt;div class="row"&gt;
+                &lt;div class="col-2 red"&gt;
+                &lt;/div&gt;
+                &lt;div class="offset-2 col-4 green"&gt;
+                &lt;/div&gt;
+                &lt;div class="offset-2 col-2 blue"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        </code>
+    </pre>
+    <br>
+    <p>The above code will be rendered as follows</p>
+    <br><br>
+    <div class="row">
+        <div class="col-2 red">
+        </div>
+        <div class="offset-2 col-4 green">
+        </div>
+        <div class="col-2 offset-2 blue">
+        </div>
+    </div>
+    <br>
+    <p>You can notice how offset works. Have a look at how the offset is always to the left of the boxes.</p>
+    <br><br><br>
+    <h2 class="text-center">Closing notes</h2>
+    <p>Now that you know the basics of HTML and CSS you can try building your own website.</p>
+    <p>You might get stuck here and there. When you do, it is important that you drag yourself out of the problem. Your best friend who will all ways help you is <a href="https://google.com">Google</a></p>
+    <p>You can always google 'How to do ...' and get relevent results. Some websites worth mentioning are <a href="https://www.w3schools.com/html/">w3 Schools</a> and of course the very own <a href="http://getbootstrap.com/docs/4.0/getting-started/introduction/">Bootstrap's documentation.</a>        Another webiste that you might come across in top search results is <a href="https://stackoverflow.com/">Stackoverflow.</a> </p>
+    <p>Use google well and you will not face an issue that cannot be solved.</p>
+    <br>
     <!-- Write code above this line -->
     <script src="../js/jquery-slim.min.js" charset="utf-8"></script>
     <script src="../js/popper.min.js" charset="utf-8"></script>
