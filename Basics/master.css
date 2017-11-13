@@ -1,0 +1,27 @@
+p {
+  font-size: 16px;
+}
+
+pre, code {
+  background-color: #eee;
+}
+
+/*Examples code*/
+
+.back {
+  background-color: red;
+  text-align: center;
+  font-size: 20px;
+}
+
+.ex1 {
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.ex1-2 {
+  padding: 50px;
+  width: 300px;
+  height: 400px;
+}

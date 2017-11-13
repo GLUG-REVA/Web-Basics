@@ -3,21 +3,110 @@
 
 <head>
     <meta charset="utf-8">
-    <title>...</title>
-    <link rel="stylesheet" href="./css/master.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Basics</title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
 
-<body>
+<body class="container">
     <!-- Write code below this line -->
+    <h1 class="text-center">Day 2: Open source session</h1>
+    <h5 class="text-center">We will look at how to style your pages today.</h5>
+    <br><br><br>
+    <p>As said yesterday, we use CSS to style our html documents. We saw how you could use the style tag for the same. But, today we shall se how you can use an external css file to apply styles to your page.</p>
+    <p>We use the link tag to import the css file. The link tag must be specified within the head tag.</p>
+    <p>Give below is an example</p>
+    <code> 
+        <pre>       
+            &lt;head&gt;
+                &lt;link rel="stylesheet" href="master.css"&gt;
+            &lt;/head&gt;
+    </pre> 
+    </code>
+    <p>The rel attribute stands for relation. It specifies the relation of the file with the html document. Here, it states the relation as 'stylesheet'. As simple as it looks. But remember the it must be specified within the head tag. Another point to note
+        is that there is no closing tag for link</p>
 
+    <p>Alright, now that we now how to import the css file in your html page; we will look at how to write css. This begs the introduction of a new concept 'A CSS class'.</p>
+    <br>
+    <p>A css class is just a block of code that specifies that properties and their values. Let us look at an simple and familiar example.</p>
+    <p> <i>All the code given below must exist in a .css file. In our case let us call it master.css</i> </p>
+    <pre>
+        <code>
+            .back {
+                background-color: red;
+            }
+        </code>
+    </pre>
+    <p>Let us break it down now... </p>
+    <br>
+    <p>So, the first thing you need to observe is the CSS class defination. <br>'back' is the name of the class. <br>The next point is that the name of a CSS class always, <i>always,</i> starts with a dot(.)</p>
+    <p>The body of the class is enclosed within the curly braces({}).</p>
+    <p>The back class says that: change the background color to red.</p>
+    <p>Now you can how more than one property in the back class. Let us extend the class.</p>
+    <pre>
+        <code>
+            .back {
+                background-color: red;
+                text-align: center;
+                font-size: 20px;
+            }
+        </code>
+    </pre>
+    <p>Phew, now we know how to declare a css class. Again, this was done in the msater.css file. Now, the next question is how do we use this class?</p>
+    <p>The answer to the question is pretty easy, Observe the following example.</p>
+    <pre>
+        <code>
+            &lt;h1 class="back"&gt;Hello, World&lt;/h1&gt;
+        </code>
+    </pre>
+    <p>As you can see the usage we simply specify an attribute called class and give it the class name within quotes. The output is as follows:</p>
+    <br><br>
+    <h1 class="back">Hello, World</h1>
+    <br><br>
+    <p>You will notice that all the properties that we specifiedhave been applied.</p>
+    <p>Without the style applied to it the output would be as follows:</p>
+    <h1>Hello,World</h1>
+    <p>Let us define a new css class as follows:</p>
+    <pre>
+        <code>
+            .ex1 {
+                padding: 20px;
+                width: 100px;
+                height: 100px;
+            }
+        </code>
+    </pre>
+    <p>We can apply more than one class to the same tag. The second one is given a preference over the first one. The way to do this is as follows:</p>
+    <pre>
+        <code>
+            &lt;h1 class="back ex1"&gt;Hello, World&lt;/h1&gt;
+        </code>
+    </pre>
 
-
-
+    <p>The above statement is rendered as follows in the browser.</p>
+    <h1 class="back ex1">Hello, World</h1>
+    <p>Now let us change padding to 50px and the width to 300px and the height to 400px. Theoutput shall be as follows:</p>
+    <p>Padding is the space between the text and the boundary of the object. The width and height are what they mean.</p>
+    <h1 class="back ex1-2">Hello, World</h1>
+    <p>A CSS class can be used with any tag. Here is anothe example:</p>
+    <pre>
+        <code>
+            &lt;ol class="back"&gt;
+                &lt;li&gt;One&lt;/li&gt;
+                &lt;li&gt;Two&lt;/li&gt;
+            &lt;/ol&gt;               
+        </code>
+    </pre>
+    <p>The output is as follows:</p>
+    <ol class="back">
+        <li>One</li>
+        <li>Two</li>
+    </ol>
+    <p>That is some ugly output but, I hope it serves as an example.</p>
     <!-- Write code above this line -->
-    <script src="./js/jquery-slim.min.js" charset="utf-8"></script>
-    <script src="./js/popper.min.js" charset="utf-8"></script>
-    <script src="./js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="../js/jquery-slim.min.js" charset="utf-8"></script>
+    <script src="../js/popper.min.js" charset="utf-8"></script>
+    <script src="../js/bootstrap.min.js" charset="utf-8"></script>
 </body>
 
 </html>
