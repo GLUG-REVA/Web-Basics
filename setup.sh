@@ -1,7 +1,7 @@
 mkdir web
 cd web
 wget https://raw.githubusercontent.com/GLUG-REVA/Web-Basics/master/Basics/index.html
-https://raw.githubusercontent.com/GLUG-REVA/Web-Basics/master/Basics/master.css
+wget https://raw.githubusercontent.com/GLUG-REVA/Web-Basics/master/Basics/master.css
 mkdir assign 
 cd assign
 wget https://raw.githubusercontent.com/GLUG-REVA/Web-Basics/master/Basics/assign/assign.css
